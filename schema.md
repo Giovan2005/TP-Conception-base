@@ -21,3 +21,13 @@
 - `prix` : `INT`
 - `id_plat` : `INT GENERATED ALWAYS AS IDENTITY`
 
+### Categorie
+
+- `id_categorie` : INT GENERATED ALWAYS AS IDENTITY
+- `libelle`
+
+## Pieges
+
+-Faute de saisie 
+
+
