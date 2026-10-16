@@ -17,3 +17,5 @@ INSERT INTO plat (libelle, prix) VALUES
     ('Ranon''ampango', 500);
 
 SELECT * FROM plat ORDER BY prix DESC;
+
+
