@@ -22,7 +22,12 @@ SET id_categorie = (
     FROM categorie
     WHERE libelle = 'Plat malagasy'
 )
-WHERE libelle IN ('Romazava', 'Ravitoto sy henakisoa');
+WHERE libelle IN (
+    'Romazava',
+    'Ravitoto sy henakisoa',
+    'Akoho sy voanio'
+);
+
 
 UPDATE plat
 SET id_categorie = (
@@ -30,7 +35,8 @@ SET id_categorie = (
     FROM categorie
     WHERE libelle = 'Plat chinois'
 )
-WHERE libelle IN ('Mi Sao');
+WHERE libelle = 'Mi Sao';
+
 
 UPDATE plat
 SET id_categorie = (
@@ -38,7 +44,8 @@ SET id_categorie = (
     FROM categorie
     WHERE libelle = 'Soupe'
 )
-WHERE libelle IN ('Soupe chinoise');
+WHERE libelle = 'Soupe chinoise';
+
 
 UPDATE plat
 SET id_categorie = (
@@ -46,7 +53,8 @@ SET id_categorie = (
     FROM categorie
     WHERE libelle = 'Dessert et gouter'
 )
-WHERE libelle IN ('Mofo gasy');
+WHERE libelle = 'Mofo gasy';
+
 
 UPDATE plat
 SET id_categorie = (
@@ -54,10 +62,14 @@ SET id_categorie = (
     FROM categorie
     WHERE libelle = 'Boisson'
 )
-WHERE libelle IN ('Ranon''ampango');
+WHERE libelle = 'Ranon''ampango';
 
 
-SELECT * FROM plat WHERE id_categorie IS NULL;
+
+SELECT *
+FROM plat
+WHERE id_categorie IS NULL;
+
 
 
 ALTER TABLE plat

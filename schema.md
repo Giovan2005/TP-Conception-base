@@ -30,4 +30,6 @@
 
 -Faute de saisie 
 
+## Pieges 3
 
+-La quantiter se trouve dans detail_commande
